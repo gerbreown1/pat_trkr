@@ -11,13 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130612114344) do
+ActiveRecord::Schema.define(version: 20130612123756) do
 
   create_table "roles", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "roles", ["name"], name: "index_roles_on_name", unique: true, using: :btree
 
   create_table "users", force: true do |t|
     t.string   "lname"
@@ -26,6 +28,7 @@ ActiveRecord::Schema.define(version: 20130612114344) do
     t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "password_digest"
   end
 
 end
