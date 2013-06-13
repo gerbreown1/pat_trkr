@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Lname:</strong>
-  <%= @user.lname %>
+<% provide(:title, @user.lname) %>
+<h1><%= @user.lname %></h1>
 </p>
 
 <p>
-  <strong>Fname:</strong>
-  <%= @user.fname %>
+  <% provide(:title, @user.fname) %>
+<h1><%= @user.fname %></h1>
 </p>
 
 <p>
-  <strong>Username:</strong>
-  <%= @user.username %>
+  <% provide(:title, @user.username) %>
+<h1><%= @user.username %></h1>
 </p>
 
 <p>

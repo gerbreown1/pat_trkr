@@ -12,12 +12,14 @@
 #
 
 class User < ActiveRecord::Base
-#attr_accessible :lname, :fname
+attr_accessor :lname, :fname
+has_secure_password
 validates :lname, presence: true
 validates :fname, presence: true
 validates :username, presence: true
 validates :password, presence: true
+validates :password, length: { minimum: 6}
 validates :password_confirmation, presence: true
-has_secure_password
+
 belongs_to :roles
 end
