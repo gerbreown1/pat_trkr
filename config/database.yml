@@ -14,7 +14,7 @@ development:
   database: pat_trkr_development
   pool: 5
   username: root
-  password: CasC#373
+  password: CasC373
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -26,7 +26,7 @@ test:
   database: pat_trkr_test
   pool: 5
   username: root
-  password: CasC#373
+  password: CasC373
   socket: /var/run/mysqld/mysqld.sock
 
 production:
@@ -35,5 +35,5 @@ production:
   database: pat_trkr_production
   pool: 5
   username: root
-  password: CasC#373
+  password: CasC373
   socket: /var/run/mysqld/mysqld.sock
