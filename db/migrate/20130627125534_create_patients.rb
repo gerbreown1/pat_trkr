@@ -3,8 +3,11 @@ class CreatePatients < ActiveRecord::Migration
     create_table :patients do |t|
       t.string :lname
       t.string :fname
-      t.string :DOB
-      t.string :date
+      t.date   :DOB
+      t.string :address
+      t.string :city
+      t.string :prov
+      t.string :gender       
 
       t.timestamps
     end
