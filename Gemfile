@@ -9,6 +9,8 @@ gem 'mysql2'
 
 gem 'activesupport', '4.0.0'
 gem 'rb-readline'
+gem "node", "~> 0.0.2"
+gem "execjs", "~> 1.4.0"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

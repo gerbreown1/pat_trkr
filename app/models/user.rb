@@ -21,5 +21,10 @@ validates :password, presence: true
 validates :password, length: { minimum: 6}
 validates :password_confirmation, presence: true
 
-belongs_to :roles
+has_many :assignments
+has_many :roles, :through => :assignments
+
+def can?(action, resource)
+    roles.includes(:rights).for(action, resource).any?
+end
 end
