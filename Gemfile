@@ -7,6 +7,8 @@ gem 'rails', '4.0.0'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 
+gem 'passenger'
+
 gem 'activesupport', '4.0.0'
 gem 'rb-readline'
 gem "node", "~> 0.0.2"
