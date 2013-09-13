@@ -39,7 +39,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
-    daemon_controller (1.1.4)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
@@ -58,13 +57,9 @@ GEM
     mime-types (1.23)
     minitest (4.7.5)
     multi_json (1.7.7)
-    mysql2 (0.3.11)
     node (0.0.2)
       eventmachine
-    passenger (4.0.8)
-      daemon_controller (>= 1.1.0)
-      rack
-      rake (>= 0.8.1)
+    pg (0.16.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -129,9 +124,8 @@ DEPENDENCIES
   execjs (~> 1.4.0)
   jbuilder (~> 1.0.1)
   jquery-rails
-  mysql2
   node (~> 0.0.2)
-  passenger
+  pg
   rails (= 4.0.0)
   rb-readline
   sass-rails (~> 4.0.0)

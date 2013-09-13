@@ -5,9 +5,10 @@ ruby "2.0.0"
 gem 'rails', '4.0.0'
 
 # Use mysql as the database for Active Record
-gem 'mysql2'
+#gem 'mysql2'
+gem 'pg'
 
-gem 'passenger'
+#gem 'passenger'
 
 gem 'activesupport', '4.0.0'
 gem 'rb-readline'
