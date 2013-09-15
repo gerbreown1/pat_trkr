@@ -10,8 +10,8 @@
 #
 
 class Right < ActiveRecord::Base
-has_many :grants
-has_many :roles, :through => grants
+# has_many :grants
+# has_many :roles, :through => grants
 OPERATION_MAPPINGS = {
     "new" => "CREATE",
     "create" => "CREATE",

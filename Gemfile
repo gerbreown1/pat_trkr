@@ -5,8 +5,8 @@ ruby "2.0.0"
 gem 'rails', '4.0.0'
 
 # Use mysql as the database for Active Record
-#gem 'mysql2'
-gem 'pg'
+gem 'mysql2'
+#gem 'pg'
 
 #gem 'passenger'
 
@@ -39,6 +39,10 @@ gem 'jbuilder', '~> 1.0.1'
 
 #Annotate the models
 gem "annotate", "~> 2.5.0"
+
+group :development do
+  gem "rails-erd"
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
